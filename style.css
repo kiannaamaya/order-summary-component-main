@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(/images/pattern-background-desktop.svg);
+}
+
+.container {
+    max-width: 960px;
+    width: 530px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 25px;
+    display: flex;
+}
+
+.wrapper {
+    /*To keep the card from getting to large*/    
+        max-width: 940px;
+    /*To keep the card from getting to large*/   
+    }
+
+.illustration {
+/*Centered image*/    
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+/*Centered image*/ 
+    border-radius: 14px 14px 0 0; 
+}
+
+.information,
+.price,
+.payment,
+.cancel {
+    text-align: center;
+}
+
+.content {
+    background-color: white;
+    width: 450px;
+    margin: 0 auto;
+    padding: 13px;
+    border-radius: 0 0 14px 14px;
+}
+
+h2 {
+    font-weight: 900;
+}
+
+p {
+    color: var(--desaturated-blue);
+}
+.plan-section {
+    background-color: var(--very-pale-blue);
+    border-radius: 16px;
+    padding: 14px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.music-icon {
+    float: left;
+    margin-left: 20px;
+    margin-top: 4px;
+    margin-right: 14px;
+}
+.annual {
+    font-weight: 700;
+    float: left;
+    margin-left: 10px;
+    color: var(--dark-blue);
+}
+
+.plan-section-left {
+    display: flex;
+    align-items: center;
+}
+
+.payment a{
+    background-color: var(--bright-blue);
+    color: white;
+    text-decoration: none;
+    padding: 15px 90px;
+    border-radius: 18px;
+    
+}
+
+.cancel a{
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    
+}
